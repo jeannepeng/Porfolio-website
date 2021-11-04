@@ -65,7 +65,22 @@ pre {
 }
 
 a {
+  color: #FF914D;
+  text-decoration: none; /* No underlining */
   background-color: transparent
+}
+
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:visited { /* visited link */
+  color: #ff7f50;
+}
+a:active { /* selected link */
+  color: #994c30;
 }
 
 abbr[title] {
@@ -102,11 +117,18 @@ sup {
   top: -.5em
 }
 
+
+.logo{
+  border-style: none
+  }
+  
 img {
   width: 100%;
   height:auto;
   border-style: none
 }
+
+
 
 button, input, optgroup, select, textarea {
   font-family: inherit;
@@ -114,6 +136,7 @@ button, input, optgroup, select, textarea {
   line-height: 1.15;
   margin: 0
 }
+
 
 button, input {
   overflow: visible
