@@ -118,16 +118,17 @@ sup {
 }
 
 
-.logo{
-  border-style: none
-  }
-  
+
+
 img {
   width: 100%;
   height:auto;
   border-style: none
 }
-
+/*! #logo{
+  width: 1%;
+  border-style: none
+  } */
 
 
 button, input, optgroup, select, textarea {
@@ -157,6 +158,19 @@ button, select {
 
 [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
   outline: 1px dotted ButtonText
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+  line-height: 2
+}
+
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
 }
 
 fieldset {
