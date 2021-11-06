@@ -5,9 +5,48 @@ html {
 }
 
 header {
-  background-color: #8C52FF;
-  padding: 10px;
-  margin: 10px;
+  background-color: #CEBDEF;
+  margin: 0;
+  padding: 0.67em 0;
+  position: relative;
+  width: 100%;
+  box-shadow: 4px 4px 2px 2px rgba(115, 115, 115, 1);
+}
+
+#hero {
+  text-align: center;
+  background-color: #CEBDEF;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav>ul>li>a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #8C52FF;
 }
 
 body {
@@ -34,35 +73,30 @@ h1 {
 h2 {
   font-family: 'Anton', sans-serif;
   font-size: 2.25em;
-  text-align: center;
   margin: .67em 0
 }
 
 h3 {
   font-family: 'Anton', sans-serif;
   font-size: 1.75em;
-  text-align: center;
   margin: .67em 0
 }
 
 h4 {
   font-family: 'Antonio', sans-serif;
   font-size: 1.35em;
-  text-align: center;
   margin: .67em 0
 }
 
 h5 {
   font-family: 'Antonio', sans-serif;
   font-size: 0.95em;
-  text-align: center;
   margin: .67em 0
 }
 
 hr {
   box-sizing: content-box;
   height: 0;
-
 }
 
 pre {
@@ -70,29 +104,28 @@ pre {
   font-size: 1em
 }
 
-.project.area {
-   text-align:center;
-   display: block;
-   margin:20px 20px 20px 20px
-  }
-
 a {
   color: #FF914D;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
   background-color: transparent
 }
 
 a:hover,
 a:focus {
   color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
   position: relative
 }
 
-a:visited { /* visited link */
+a:visited {
+  /* visited link */
   color: #ff7f50;
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #994c30;
 }
 
@@ -131,40 +164,63 @@ sup {
 }
 
 img {
-  width: 100%;
-  height:auto;
+  width: 80%;
+  height: auto;
   border-style: none;
-  margin:10px 10px 10px 10px
+  margin: 10px 10px 10px 10px;
+  padding:  0.67em 0;
 }
 
-.CV.area,.social-network-bar {
+.CV.area, .social-network-bar {
   text-align: center;
-  }
+}
+
 .project.image {
   width: 50%;
   height: auto;
-float: left
-    }
+  margin: 5px 5px 5px 5px;
+  float: left
+}
 
-    .projec.intro {
-      width: 50%;
-      height: auto;
-      margin:10px 10px 10px 10px;
-          display:inline-block;
-    float: right
-        }
+.project.intro {
+  text-align: left;
+  width: 40%;
+  height: auto;
+  float: right
+}
 
+.project.area {
+  display: inline-block;
+  padding: 2.75em 2.75em 2.75em 2.75em;
+}
 
-        .fa.fa-linkedin, .fa.fa-instagram, .adobe.XD, .miro {
-          display:inline-block;
-          }
-.logo{
+#contact, .social-network-bar {
+  text-align: center;
+  display: block;
+}
+
+#projects {
+  text-align: center;
+}
+
+.fa.fa-linkedin, .fa.fa-instagram, .adobe.XD, .miro {
+  text-align: center;
+  width: 2em;
+  display: inline-block;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+.logo {
   width: 2em;
   height: auto;
-  display:inline-block;
+  max-width: 250px;
+  display: inline-block;
   border-style: none
-  } */
-
+}
 
 button, input, optgroup, select, textarea {
   font-family: inherit;
@@ -172,7 +228,6 @@ button, input, optgroup, select, textarea {
   line-height: 1.15;
   margin: 0
 }
-
 
 button, input {
   overflow: visible
@@ -199,10 +254,9 @@ button, select {
   background-color: transparent;
   color: #ff7f50;
   text-transform: uppercase;
-  display:inline-block;
+  display: inline-block;
   border: 2px solid #ff7f50;
   padding: 5px 5px 5px 5px;
-  margin:auto 10px
 }
 
 .button.contact:hover {
