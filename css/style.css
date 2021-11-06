@@ -73,7 +73,7 @@ h1 {
 h2 {
   font-family: 'Anton', sans-serif;
   font-size: 2.25em;
-  color:#806BAB;
+  color: #806BAB;
   margin: .67em 0
 }
 
@@ -172,11 +172,9 @@ img {
   padding: 0.67em 0;
 }
 
-.CV.area, .social-network-bar {
+.CV.area, .social-network-bar, .projects.areas {
   text-align: center;
 }
-
-
 
 .project.intro {
   text-align: left;
@@ -202,14 +200,21 @@ img {
   margin: 5px 5px 5px 5px;
   display: inline-block;
 }
-.design.steps {
-  width: 30%;
-  text-align: center;
+
+.sketch.image {
+  width: 10%;
+  height: auto;
+  display: inline-block;
 }
 
-.projects.titles, .projects.areas {
-  text-align: center;
-  color:#806BAB;
+.design.steps {
+  width: 30%;
+  padding: 10px 10px 10px 10%;
+}
+
+.projects.titles {
+  padding: 10px 10px 10px 10%;
+  color: #806BAB;
 }
 
 #contact, .social-network-bar {
@@ -281,6 +286,11 @@ button, select {
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
+}
+
+.textarea {
+  width: 80%;
+  padding: 10px 10px 10px 10%;
 }
 
 fieldset {
