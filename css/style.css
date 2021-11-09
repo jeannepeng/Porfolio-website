@@ -26,6 +26,10 @@ header {
   padding: 0.67em 0;
 }
 
+#hero span {
+  display: block;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -177,14 +181,16 @@ img {
 
 .project.intro {
   text-align: left;
-  width: 40%;
+  width: 42%;
   height: auto;
+    display: inline-block;
   float: right
 }
 
 .project.area {
   display: inline-block;
   padding: 2.75em 2.75em 2.75em 2.75em;
+    text-align: center;
 }
 
 .projects.cover {
@@ -196,14 +202,26 @@ img {
 .projects.image {
   width: 40%;
   height: auto;
+  padding: 0px 0px 0px 5%;
+
   margin: 5px 5px 5px 5px;
+    text-align: center;
+  display: inline-block;
+}
+
+.animation.image {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 0px 10%;
+
+    text-align: center;
   display: inline-block;
 }
 
 .sketch.image {
   width: 12%;
   height: auto;
-    margin: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
   display: inline-block;
 }
 
@@ -243,6 +261,16 @@ img {
   /* 25px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
 .logo {
   width: 2em;
   height: auto;
@@ -279,6 +307,37 @@ button, select {
   outline: 1px dotted ButtonText
 }
 
+.carton {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+    margin: 5px 5px 5px 5px;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
 .button.contact {
   background-color: transparent;
   color: #ff7f50;
@@ -286,11 +345,17 @@ button, select {
   display: inline-block;
   border: 2px solid #ff7f50;
   padding: 5px 5px 5px 5px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 1px 1px rgba(191, 189, 196, 1);
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  text-decoration: none;
 }
 
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
+  opacity: 0.8;
 }
 
 .textarea {
@@ -342,6 +407,12 @@ textarea {
   font: inherit
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 details {
   display: block
 }
@@ -358,4 +429,53 @@ template {
   display: none
 }
 
-/*# sourceMappingURL=normalize.min.css.map */
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+    display: inline-block;
+  }
+
+  .col-md-6 {
+    width: 42%;
+    padding: 0px 0px 0px 6%;
+    text-align: left;
+    height: auto;
+      display: inline-block;
+    float: right
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-family: 'Antonio', sans-serif;
+    font-size: 18px;
+    margin: 0
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {}
