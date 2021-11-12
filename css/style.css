@@ -35,8 +35,33 @@ nav>ul {
   padding: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
 }
 
 nav>ul>li>a {
@@ -183,14 +208,14 @@ img {
   text-align: left;
   width: 42%;
   height: auto;
-    display: inline-block;
+  display: inline-block;
   float: right
 }
 
 .project.area {
   padding: 2.75em 2.75em 2.75em 2.75em;
-    text-align: center;
-    clear:both;
+  text-align: center;
+  clear: both;
 }
 
 .projects.cover {
@@ -203,9 +228,8 @@ img {
   width: 40%;
   height: auto;
   padding: 0px 0px 0px 5%;
-
   margin: 5px 5px 5px 5px;
-    text-align: center;
+  text-align: center;
   display: inline-block;
 }
 
@@ -213,8 +237,7 @@ img {
   width: 100%;
   height: auto;
   padding: 0px 0px 0px 10%;
-
-    text-align: center;
+  text-align: center;
   display: inline-block;
 }
 
@@ -274,7 +297,7 @@ img {
 .logo {
   width: 2em;
   height: auto;
-  max-width: 250px;
+  max-width: 150px;
   display: inline-block;
   border-style: none
 }
@@ -311,23 +334,41 @@ button, select {
   width: 100%;
   max-width: 100%;
   height: auto;
-    margin: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
@@ -432,10 +473,14 @@ template {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
+  }
+
+  .logo {
+    max-width: 250px;
   }
 
   nav {
@@ -445,12 +490,28 @@ Medium devices (640px and larger)
     display: inline-block;
   }
 
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   .col-md-6 {
     width: 42%;
     padding: 0px 0px 0px 6%;
     text-align: left;
     height: auto;
-      display: inline-block;
+    display: inline-block;
     float: right
   }
 
@@ -462,7 +523,7 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   body {
     font-family: 'Antonio', sans-serif;
     font-size: 18px;
@@ -473,9 +534,9 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1441px) {}
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 1921px) {}
