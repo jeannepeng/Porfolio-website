@@ -5,7 +5,7 @@ html {
 }
 
 header {
-  background-color: #CEBDEF;
+  background-color: #FFD8B6;
   margin: 0;
   padding: 0.67em 0;
   position: relative;
@@ -15,7 +15,7 @@ header {
 
 #hero {
   text-align: center;
-  background-color: #CEBDEF;
+  background-color: #FFD8B6;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -75,7 +75,7 @@ nav>ul>li>a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #8C52FF;
+  color: #A45C1D;
 }
 
 body {
