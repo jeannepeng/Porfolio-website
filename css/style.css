@@ -90,6 +90,7 @@ main {
 
 h1, h2, h3, h4, h5 {
   line-height: 1.4;
+    clear:both;
 }
 
 h1 {
@@ -102,7 +103,7 @@ h1 {
 h2 {
   font-family: 'Anton', sans-serif;
   font-size: 2.25em;
-  margin: .67em 0
+  margin: .67em 0;
 }
 
 h3 {
@@ -507,12 +508,12 @@ Medium devices (640px and larger)
   }
 
   .col-md-6 {
-    width: 42%;
+    width: 43%;
     padding: 0px 0px 0px 6%;
     text-align: left;
     height: auto;
     display: inline-block;
-    float: right
+    float: right;
   }
 
   [class*="col-"] {
