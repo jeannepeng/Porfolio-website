@@ -187,8 +187,7 @@ pre {
 a {
   color: #FF914D;
   text-decoration: none;
-  /* No underlining */
-  background-color: transparent
+  /* No underlining */  background-color: transparent
 }
 
 a:hover,
