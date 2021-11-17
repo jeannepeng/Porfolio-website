@@ -17,7 +17,7 @@ header {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-  clear:both;
+  clear: both;
 }
 
 #hero span {
@@ -47,7 +47,7 @@ nav>ul {
   border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -71,15 +71,14 @@ nav>ul>li>a {
   font-weight: 700;
   color: #D75BEB;
 }*/
-
 nav>ul>li>a: {
-padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
-.nav .current {
-  border-bottom: 2px solid rgba(101,14,145,0.5);
+.current {
+  border-bottom: 2px solid rgba(101, 14, 145, 0.5);
   padding-bottom: 5px;
-  }
+}
 
 /*! Header part text over image */
 /* Container holding the image and the text */
@@ -88,7 +87,7 @@ padding-bottom: 5px;
   text-align: center;
   padding-bottom: 50px;
   color: white;
-  width:100%
+  width: 100%
 }
 
 /* Bottom left text */
@@ -127,7 +126,6 @@ padding-bottom: 5px;
   transform: translate(-50%, -50%);
 }
 
-
 body {
   font-family: 'Antonio', sans-serif;
   font-size: 14px;
@@ -140,7 +138,7 @@ main {
 
 h1, h2, h3, h4, h5 {
   line-height: 1.4em;
-    clear:both;
+  clear: both;
 }
 
 h1 {
@@ -187,13 +185,14 @@ pre {
 a {
   color: #FF914D;
   text-decoration: none;
-  /* No underlining */  background-color: transparent
+  /* No underlining */
+  background-color: transparent
 }
 
 a:hover,
 a:focus {
   color: #650E91;
-  border-bottom: 2px solid rgba(101,14,145,0.5);
+  border-bottom: 2px solid rgba(101, 14, 145, 0.5);
   padding-bottom: 5px;
   /*text-decoration: underline;*/
   /* Underlining when hovering over a link */
@@ -317,7 +316,7 @@ img {
 .projects.titles {
   padding: 10px 10px 10px 10%;
   color: #806BAB;
-  clear:both;
+  clear: both;
 }
 
 .realEstateMate.titles {
