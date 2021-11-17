@@ -1,7 +1,6 @@
 /*! style.css v8.0.1 | MIT License | github.com/jeannepeng/Portfolio-website/style.css */
 html {
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%
 }
 
 header {
@@ -71,7 +70,7 @@ nav>ul>li>a {
   font-weight: 700;
   color: #D75BEB;
 }*/
-nav>ul>li>a: {
+nav>ul>li>a {
   padding-bottom: 5px;
 }
 
@@ -401,48 +400,6 @@ button, select {
   max-width: 100%;
   height: auto;
   margin: 5px 5px 5px 5px;
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
 }
 
 .button.contact {
