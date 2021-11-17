@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
 
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
 <head>
   <meta charset="utf-8">
@@ -23,6 +24,8 @@
 </head>
 
 <body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
   <header>
     <!-- For the navigation -->
     <!-- Logo and the page titles on the same line -->
@@ -30,9 +33,9 @@
       <div class="navtoggle" id="myNavtoggle">
         <picture class="logo"><img src="favicon/favicon-32x32.png" alt=" Jeanne Peng"> </picture>
         <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
+          <ul class="nav">
+            <li><a  href="index.html">Work</a></li>
+            <li><a class="current" href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
@@ -43,18 +46,20 @@
 
 
   <!-- For the hero section -->
-  <main id="projects">
-    <div class="projects areas">
-      <h2>About</h2>
-      <div class="projects image">
-        <picture>
-          <source srcset="img/jeannep.png" media="(max-width:767px)">
-          <img src="img/jeannep.png" alt="Jeanne Peng">
-        </picture>
-      </div>
+  <main>
+    <div class="projects titles">
+      <h1>About</h1>
     </div>
-    <div>
-      <div class="projects titles">
+    <div class="projects areas">
+    <div class="profile photo">
+      <!-- open first column (used for image) -->
+      <picture>
+        <source srcset="img/jeannep.png" media="(max-width:767px)">
+        <img src="img/jeannep.png" alt="Jeannep">
+      </picture>
+    </div>
+    </div>
+    <div class="projects titles">
         <h3>My Story</h3><!-- Skills and Tools-->
       </div>
       <div class="textarea">
@@ -80,10 +85,14 @@
           <h4>Skills</h4><!-- Skills and Tools-->
         </div>
         <div class="textarea">
-          <p>
-            <!-- open paragraph -->
-            Information architecture, UX Research, UX Design, UI Design, Product Management, Project Management, Agile Methodology
-          </p><!-- end paragraph -->
+          <li>Information architecture</li>
+          <li>UX Research</li>
+          <li>UX Design</li>
+          <li>UI Design</li>
+          <li>Product Management</li>
+          <li>Project Management</li>
+          <li>Agile Methodology</li>
+          <li>Frontend Development</li>
         </div>
       </div>
 
@@ -92,16 +101,21 @@
           <h4>Tools</h4><!-- Skills and Tools-->
         </div>
         <div class="textarea">
-          <p>
-            <!-- open paragraph -->
-            Adobe XD, Miro, Visual Paradigm, Optimal Workshop, Marvel and FlowMapp, Figma, Axure, JIRA, Confluence
-          </p><!-- end paragraph -->
+          <li>Adobe XD</li>
+          <li>Miro</li>
+          <li>Visual Paradigm</li>
+          <li>Optimal Workshop</li>
+          <li>Marvel and FlowMapp</li>
+          <li>Figma</li>
+          <li>Axure</li>
+          <li>JIRA</li>
+          <li>Confluence</li>
         </div>
       </div>
-
     </div><!-- end second column -->
-
   </main>
+  <br>
+  <br>
   <!-- For the footer  -->
   <footer id="contact">
     <div>
@@ -125,8 +139,10 @@
       <p>Copyright Jeanne Peng 2021</p>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
+  <br>
+  <br>
+  <br>
+  <br>
 </body>
 
-</html>
+</xml>
