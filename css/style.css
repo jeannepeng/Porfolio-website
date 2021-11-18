@@ -181,7 +181,7 @@ pre {
 }
 
 a {
-  color: #FF914D;
+  color: #DB3B00;
   text-decoration: none;
   /* No underlining */
   background-color: transparent
@@ -398,10 +398,10 @@ button, select {
 
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: #DB3B00;
   text-transform: uppercase;
   display: inline-block;
-  border: 2px solid #ff7f50;
+  border: 2px solid #DB3B00;
   padding: 5px 5px 5px 5px;
   border-radius: 3px;
   box-shadow: 3px 3px 1px 1px rgba(191, 189, 196, 1);
