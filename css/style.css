@@ -4,6 +4,7 @@ html {
 }
 
 header {
+  color: inherit;
   background-color: #FFFFFF;
   z-index: 9999;
   position: fixed;
@@ -62,6 +63,7 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-weight: 700;
   color: #650E91;
+  background-color: inherit;
 }
 
 /*nav>ul>li>a:visited {
@@ -70,10 +72,6 @@ nav>ul>li>a {
   font-weight: 700;
   color: #D75BEB;
 }*/
-nav>ul>li>a {
-  padding-bottom: 5px;
-}
-
 .current {
   border-bottom: 2px solid rgba(101, 14, 145, 0.5);
   padding-bottom: 5px;
@@ -85,6 +83,7 @@ nav>ul>li>a {
   position: relative;
   text-align: center;
   padding-bottom: 50px;
+  background-color: inherit;
   color: white;
   width: 100%
 }
@@ -191,6 +190,7 @@ a {
 a:hover,
 a:focus {
   color: #650E91;
+  background-color: inherit;
   border-bottom: 2px solid rgba(101, 14, 145, 0.5);
   padding-bottom: 5px;
   /*text-decoration: underline;*/
@@ -200,18 +200,19 @@ a:focus {
 
 a:visited {
   /* visited link */
+  background-color: inherit;
   color: #650E91;
 }
 
 a:active {
   /* selected link */
+  background-color: inherit;
   color: #650E91;
 }
 
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted
 }
 
 b, strong {
@@ -309,23 +310,29 @@ img {
 
 .design.steps {
   width: 30%;
-  padding: 10px 10px 10px 10%;
+  padding: 2% 2% 2% 10%;
 }
 
 .projects.titles {
-  padding: 10px 10px 10px 10%;
+  padding: 2% 2% 2% 10%;
   color: #806BAB;
+  background-color: inherit;
   clear: both;
 }
 
 .realEstateMate.titles {
-  padding: 10px 10px 10px 10%;
+  padding: 2% 2% 2% 10%;
+  background-color: inherit;
   color: #0880AE;
 }
 
-#contact, .social-network-bar {
+#contact {
   text-align: center;
   display: block;
+}
+
+#contact h2 {
+  border-top: 2px solid rgba(191, 189, 196, 1);
 }
 
 .footer::before {
@@ -382,19 +389,6 @@ button, select {
   text-transform: none
 }
 
-[type=button], [type=reset], [type=submit], button {
-  -webkit-appearance: button
-}
-
-[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
-  border-style: none;
-  padding: 0
-}
-
-[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
-  outline: 1px dotted ButtonText
-}
-
 .carton {
   width: 100%;
   max-width: 100%;
@@ -424,7 +418,7 @@ button, select {
 
 .textarea {
   width: 80%;
-  padding: 10px 10px 10px 10%;
+  padding: 2% 2% 2% 10%;
 }
 
 fieldset {
@@ -434,6 +428,7 @@ fieldset {
 legend {
   box-sizing: border-box;
   color: inherit;
+  background-color: inherit;
   display: table;
   max-width: 100%;
   padding: 0;
@@ -448,51 +443,6 @@ textarea {
   overflow: auto
 }
 
-[type=checkbox], [type=radio] {
-  box-sizing: border-box;
-  padding: 0
-}
-
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
-  height: auto
-}
-
-[type=search] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px
-}
-
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-details {
-  display: block
-}
-
-summary {
-  display: list-item
-}
-
-template {
-  display: none
-}
-
-[hidden] {
-  display: none
-}
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -500,10 +450,6 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
-  }
-
-  .logo {
-    max-width: 250px;
   }
 
   nav {
@@ -546,13 +492,7 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1025px) {
-  body {
-    font-family: 'Antonio', sans-serif;
-    font-size: 16px;
-    margin: 0
-  }
-}
+@media only screen and (min-width: 1025px) {}
 
 /* ==============================
 X-large devices (1440px or larger)
