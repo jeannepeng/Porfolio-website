@@ -1,6 +1,6 @@
 /*! style.css v8.0.1 | MIT License | github.com/jeannepeng/Portfolio-website/style.css */
 html {
-  line-height: 1.15em;
+  line-height: 1.15;
 }
 
 header {
@@ -14,10 +14,10 @@ header {
 
 #hero {
   text-align: center;
-  padding: 20px 0;
+  padding: 25px 0;
   display: inline-block;
   width: 100%;
-  clear: both;
+
 }
 
 #hero span {
@@ -147,7 +147,7 @@ main {
 }
 
 h1, h2, h3, h4, h5 {
-  line-height: 1.4em;
+  line-height: 0.5em;
   clear: both;
 }
 
@@ -329,20 +329,19 @@ img {
   padding: 2% 2% 0 10%;
   color: #650E91;
   background-color: inherit;
-  clear: both;
 }
 
 .projects.titles {
   padding: 2% 2% 0 10%;
   color: #806BAB;
   background-color: inherit;
-  clear: both;
 }
 
 .realEstateMate.titles {
   padding: 2% 2% 2% 10%;
   background-color: inherit;
   color: #0880AE;
+
 }
 
 #contact {
