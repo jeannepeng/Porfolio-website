@@ -353,7 +353,7 @@ img {
 #contact h2 {
   border-top: 2px solid rgba(191, 189, 196, 1);
   margin: 10% 10% 0 10%;
-  padding:2% 0 0 0
+  padding: 2% 0 0 0
 }
 
 #projects.p, #projects.li {
@@ -501,7 +501,7 @@ textarea {
     margin: .27em 0
   }
 
-  body{
+  body {
     font-size: 12px;
   }
 }
